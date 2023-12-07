@@ -18,6 +18,159 @@
     />
   </head>
   <body>
+    <!-- BÀI 1 -->
+    <div class="bai1 pt-5">
+      <div class="container">
+        <h1 class="mb-3">BÀI TẬP 1: QUẢN LÝ TUYỂN SINH</h1>
+        <div class="form-group">
+          <label for="diemChuanHoiDong">Điểm chuẩn</label>
+          <input
+            type="text"
+            name=""
+            id="diemChuanHoiDong"
+            class="form-control"
+            placeholder="Nhập điểm chuẩn hội đồng"
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="diemThiMonThuNhat">Điểm thi môn thứ nhất</label>
+          <input
+            type="text"
+            name=""
+            id="diemThiMonThuNhat"
+            class="form-control"
+            placeholder="Nhập điểm thi môn thứ nhất"
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="diemThiMonThuHai">Điểm thi môn thứ hai</label>
+          <input
+            type="text"
+            name=""
+            id="diemThiMonThuHai"
+            class="form-control"
+            placeholder="Nhập điểm thi môn thứ hai"
+            aria-describedby="helpId"
+          />
+        </div>
+        <div class="form-group">
+          <label for="diemThiMonThuBa">Điểm thi môn thứ ba</label>
+          <input
+            type="text"
+            name=""
+            id="diemThiMonThuBa"
+            class="form-control"
+            placeholder="Nhập điểm thi môn thứ ba"
+            aria-describedby="helpId"
+          />
+        </div>
+
+        <div class="khuVuc mb-3">
+          <h3>Khu vực</h3>
+          <div class="form-check">
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemKhuVuc"
+                id="khuVucA"
+                value="checkedValue"
+                checked
+              />
+              Khu vực A
+            </label>
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemKhuVuc"
+                id="khuVucB"
+                value="checkedValue"
+                checked
+              />
+              Khu vực B
+            </label>
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemKhuVuc"
+                id="khuVucC"
+                value="checkedValue"
+                checked
+              />
+              Khu vực C
+            </label>
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemKhuVuc"
+                id="khuVucX"
+                value="checkedValue"
+                checked
+              />
+              X
+            </label>
+          </div>
+        </div>
+
+        <div class="doiTuong mb-3">
+          <h3>Đối tượng</h3>
+          <div class="form-check">
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemDoiTuong"
+                id="doiTuong1"
+                value="checkedValue"
+                checked
+              />
+              Đối tượng 1
+            </label>
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemDoiTuong"
+                id="doiTuong2"
+                value="checkedValue"
+                checked
+              />
+              Đối tượng 2
+            </label>
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemDoiTuong"
+                id="doiTuong3"
+                value="checkedValue"
+                checked
+              />
+              Đối tượng 3
+            </label>
+            <label class="form-check-label">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="diemDoiTuong"
+                id="doiTuong0"
+                value="checkedValue"
+                checked
+              />
+              0
+            </label>
+          </div>
+        </div>
+        <button id="btn1" class="btn btn-dark">Kiểm tra kết quả</button>
+        <div id="kq1" class="p-3 mt-3 bg-dark text-white"></div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
