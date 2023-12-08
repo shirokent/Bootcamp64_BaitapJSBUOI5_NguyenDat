@@ -22,8 +22,9 @@
     <div class="bai1 pt-5">
       <div class="container">
         <h1 class="mb-3">BÀI TẬP 1: QUẢN LÝ TUYỂN SINH</h1>
+
         <div class="form-group">
-          <label for="diemChuanHoiDong">Điểm chuẩn</label>
+          <label for="">Điểm chuẩn</label>
           <input
             type="text"
             name=""
@@ -33,6 +34,7 @@
             aria-describedby="helpId"
           />
         </div>
+
         <div class="form-group">
           <label for="diemThiMonThuNhat">Điểm thi môn thứ nhất</label>
           <input
@@ -44,6 +46,7 @@
             aria-describedby="helpId"
           />
         </div>
+
         <div class="form-group">
           <label for="diemThiMonThuHai">Điểm thi môn thứ hai</label>
           <input
@@ -55,6 +58,7 @@
             aria-describedby="helpId"
           />
         </div>
+
         <div class="form-group">
           <label for="diemThiMonThuBa">Điểm thi môn thứ ba</label>
           <input
@@ -76,7 +80,7 @@
                 class="form-check-input"
                 name="diemKhuVuc"
                 id="khuVucA"
-                value="checkedValue"
+                value="khuVucA"
                 checked
               />
               Khu vực A
@@ -87,7 +91,7 @@
                 class="form-check-input"
                 name="diemKhuVuc"
                 id="khuVucB"
-                value="checkedValue"
+                value="khuVucB"
                 checked
               />
               Khu vực B
@@ -98,7 +102,7 @@
                 class="form-check-input"
                 name="diemKhuVuc"
                 id="khuVucC"
-                value="checkedValue"
+                value="khuVucC"
                 checked
               />
               Khu vực C
@@ -109,7 +113,7 @@
                 class="form-check-input"
                 name="diemKhuVuc"
                 id="khuVucX"
-                value="checkedValue"
+                value="khuVucX"
                 checked
               />
               X
@@ -126,7 +130,7 @@
                 class="form-check-input"
                 name="diemDoiTuong"
                 id="doiTuong1"
-                value="checkedValue"
+                value="doiTuong1"
                 checked
               />
               Đối tượng 1
@@ -137,7 +141,7 @@
                 class="form-check-input"
                 name="diemDoiTuong"
                 id="doiTuong2"
-                value="checkedValue"
+                value="doiTuong2"
                 checked
               />
               Đối tượng 2
@@ -148,7 +152,7 @@
                 class="form-check-input"
                 name="diemDoiTuong"
                 id="doiTuong3"
-                value="checkedValue"
+                value="doiTuong3"
                 checked
               />
               Đối tượng 3
@@ -159,15 +163,167 @@
                 class="form-check-input"
                 name="diemDoiTuong"
                 id="doiTuong0"
-                value="checkedValue"
+                value="doiTuong0"
                 checked
               />
-              0
+              Không ưu tiên
             </label>
           </div>
         </div>
         <button id="btn1" class="btn btn-dark">Kiểm tra kết quả</button>
         <div id="kq1" class="p-3 mt-3 bg-dark text-white"></div>
+      </div>
+    </div>
+
+    <!-- BÀI 2 -->
+    <div class="bai2 pt-5">
+      <div class="container">
+        <h1 class="mb-3">BÀI TẬP 2: TÍNH TIỀN ĐIỆN</h1>
+        <div class="form-group">
+          <label for="hoTen">Tên chủ hộ</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="hoTen"
+            aria-describedby="helpId"
+            placeholder="Nhập họ tên chủ hộ"
+          />
+        </div>
+        <div class="form-group">
+          <label for="soDien">Số điện tiêu thụ</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soDien"
+            aria-describedby="helpId"
+            placeholder="Nhập số điện tiêu thụ"
+          />
+        </div>
+        <button id="btn2" class="btn btn-success">Tính tiền điện</button>
+        <div id="kq2" class="bg-success p-3 mt-3 text-white"></div>
+      </div>
+    </div>
+
+    <!-- BÀI 3 -->
+    <div class="bai3 pt-5">
+      <div class="container">
+        <h1>BÀI TẬP 3: TÍNH THUẾ THU NHẬP CÁ NHÂN</h1>
+
+        <div class="form-group">
+          <label for="hoTenCaNhan">Họ & Tên</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="hoTenCaNhan"
+            aria-describedby="helpId"
+            placeholder="Nhập họ tên người lao động"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="thuNhapNam">Tổng thu nhập năm</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="thuNhapNam"
+            aria-describedby="helpId"
+            placeholder="Nhập tổng thu nhập năm của người lao động"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="soNguoiPhuThuoc">Số người phụ thuộc</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soNguoiPhuThuoc"
+            aria-describedby="helpId"
+            placeholder="Nhập số lượng người phụ thuộc"
+          />
+        </div>
+
+        <button id="btn3" class="btn btn-primary">Kiểm tra kết quả</button>
+        <div id="kq3" class="p-3 mt-3 bg-primary text-white"></div>
+      </div>
+    </div>
+
+    <!-- BÀI 4 -->
+    <div class="bai4 py-5">
+      <div class="container">
+        <h1>BÀI TẬP 4: TÍNH TIỀN CÁP</h1>
+
+        <div class="form-group">
+          <label for="maKhachHang">Mã khách hàng</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="maKhachHang"
+            aria-describedby="helpId"
+            placeholder="Nhập mã khách hàng"
+          />
+        </div>
+
+        <div class="loaiKhachHang mb-3">
+          <h3>Khách hàng là</h3>
+
+          <div class="form-check">
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="khachHang"
+                id="doanhNghiep"
+                value="doanhNghiep"
+                checked
+              />
+              Doanh nghiệp
+            </label>
+            <label class="form-check-label mr-5">
+              <input
+                type="radio"
+                class="form-check-input"
+                name="khachHang"
+                id="caNhan"
+                value="caNhan"
+                checked
+              />
+              Cá nhân
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="soKetNoi">Số kết nối</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soKetNoi"
+            aria-describedby="helpId"
+            placeholder="Nhập số lượng kết nối"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="kenhCaoCap">Số kênh cao cấp</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="kenhCaoCap"
+            aria-describedby="helpId"
+            placeholder="Nhập số lượng kênh cao cấp"
+          />
+        </div>
+
+        <button id="btn4" class="btn btn-danger">Kiểm tra kết quả</button>
+        <div id="kq1" class="p-3 mt-3 bg-danger text-white"></div>
       </div>
     </div>
 
