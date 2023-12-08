@@ -22,7 +22,6 @@
     <div class="bai1 pt-5">
       <div class="container">
         <h1 class="mb-3">BÀI TẬP 1: QUẢN LÝ TUYỂN SINH</h1>
-
         <div class="form-group">
           <label for="">Điểm chuẩn</label>
           <input
@@ -34,7 +33,6 @@
             aria-describedby="helpId"
           />
         </div>
-
         <div class="form-group">
           <label for="diemThiMonThuNhat">Điểm thi môn thứ nhất</label>
           <input
@@ -46,7 +44,6 @@
             aria-describedby="helpId"
           />
         </div>
-
         <div class="form-group">
           <label for="diemThiMonThuHai">Điểm thi môn thứ hai</label>
           <input
@@ -58,7 +55,6 @@
             aria-describedby="helpId"
           />
         </div>
-
         <div class="form-group">
           <label for="diemThiMonThuBa">Điểm thi môn thứ ba</label>
           <input
@@ -70,7 +66,6 @@
             aria-describedby="helpId"
           />
         </div>
-
         <div class="khuVuc mb-3">
           <h3>Khu vực</h3>
           <div class="form-check">
@@ -120,7 +115,6 @@
             </label>
           </div>
         </div>
-
         <div class="doiTuong mb-3">
           <h3>Đối tượng</h3>
           <div class="form-check">
@@ -210,7 +204,6 @@
     <div class="bai3 pt-5">
       <div class="container">
         <h1>BÀI TẬP 3: TÍNH THUẾ THU NHẬP CÁ NHÂN</h1>
-
         <div class="form-group">
           <label for="hoTenCaNhan">Họ & Tên</label>
           <input
@@ -222,7 +215,6 @@
             placeholder="Nhập họ tên người lao động"
           />
         </div>
-
         <div class="form-group">
           <label for="thuNhapNam">Tổng thu nhập năm</label>
           <input
@@ -234,7 +226,6 @@
             placeholder="Nhập tổng thu nhập năm của người lao động"
           />
         </div>
-
         <div class="form-group">
           <label for="soNguoiPhuThuoc">Số người phụ thuộc</label>
           <input
@@ -246,7 +237,6 @@
             placeholder="Nhập số lượng người phụ thuộc"
           />
         </div>
-
         <button id="btn3" class="btn btn-primary">Kiểm tra kết quả</button>
         <div id="kq3" class="p-3 mt-3 bg-primary text-white"></div>
       </div>
@@ -256,7 +246,6 @@
     <div class="bai4 py-5">
       <div class="container">
         <h1>BÀI TẬP 4: TÍNH TIỀN CÁP</h1>
-
         <div class="form-group">
           <label for="maKhachHang">Mã khách hàng</label>
           <input
@@ -268,19 +257,18 @@
             placeholder="Nhập mã khách hàng"
           />
         </div>
-
         <div class="loaiKhachHang mb-3">
           <h3>Khách hàng là</h3>
-
           <div class="form-check">
             <label class="form-check-label mr-5">
               <input
                 type="radio"
                 class="form-check-input"
                 name="khachHang"
-                id="doanhNghiep"
+                id="doanhNghiep yourBox"
                 value="doanhNghiep"
                 checked
+                onclick="myFunction2()"
               />
               Doanh nghiệp
             </label>
@@ -289,15 +277,15 @@
                 type="radio"
                 class="form-check-input"
                 name="khachHang"
-                id="caNhan"
-                value="caNhan"
+                id="nhaDan"
+                value="nhaDan"
                 checked
+                onclick="myFunction1()"
               />
-              Cá nhân
+              Nhà dân
             </label>
           </div>
         </div>
-
         <div class="form-group">
           <label for="soKetNoi">Số kết nối</label>
           <input
@@ -307,9 +295,9 @@
             id="soKetNoi"
             aria-describedby="helpId"
             placeholder="Nhập số lượng kết nối"
+            disabled
           />
         </div>
-
         <div class="form-group">
           <label for="kenhCaoCap">Số kênh cao cấp</label>
           <input
@@ -321,9 +309,8 @@
             placeholder="Nhập số lượng kênh cao cấp"
           />
         </div>
-
         <button id="btn4" class="btn btn-danger">Kiểm tra kết quả</button>
-        <div id="kq1" class="p-3 mt-3 bg-danger text-white"></div>
+        <div id="kq4" class="p-3 mt-3 bg-danger text-white"></div>
       </div>
     </div>
 
@@ -346,5 +333,13 @@
     ></script>
     <!-- JS -->
     <script src="./index.js"></script>
+    <script>
+      function myFunction1() {
+        document.getElementById("soKetNoi").disabled = true;
+      }
+      function myFunction2() {
+        document.getElementById("soKetNoi").disabled = false;
+      }
+    </script>
   </body>
 </html>

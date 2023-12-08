@@ -140,3 +140,61 @@ document.getElementById("btn3").onclick = function () {
 };
 
 // ========== BÀI 4 ==========
+const nhaDan = "nhaDan";
+const doanhNghiep = "doanhNghiep";
+document.getElementById("btn4").onclick = function () {
+  var maKhachHang = document.getElementById("maKhachHang").value;
+  // console.log(maKhachHang);
+  var soKetNoi = document.getElementById("soKetNoi").value * 1;
+  // console.log(soKetNoi);
+  var kenhCaoCap = document.getElementById("kenhCaoCap").value * 1;
+  // console.log(kenhCaoCap);
+  var khachHang = document.querySelector(
+    ".form-check input[name='khachHang']:checked"
+  ).value;
+  // console.log(khachHang);
+  var phiXuLyHoaDon = tinhPhiXuLyHoaDon(khachHang);
+  // console.log(phiXuLyHoaDon);
+  var tienThueKenhCaoCap = tinhThueKenhCaoCap(khachHang);
+  // console.log(tienThueKenhCaoCap);
+  var tongTien = 0;
+  if (khachHang == nhaDan) {
+    tongTien = phiXuLyHoaDon + 20.5 + kenhCaoCap * tienThueKenhCaoCap;
+  } else {
+    if (soKetNoi <= 10) {
+      tongTien = phiXuLyHoaDon + 75 + kenhCaoCap * tienThueKenhCaoCap;
+    } else {
+      tongTien =
+        phiXuLyHoaDon +
+        75 +
+        (soKetNoi - 10) * 5 +
+        kenhCaoCap * tienThueKenhCaoCap;
+    }
+  }
+  var tinhTongTien4 = tongTien.toLocaleString("it-IT", {
+    style: "currency",
+    currency: "USD",
+  });
+  var ketQua4 = `Mã khách hàng: ${maKhachHang}; Số tiền cáp cần phải trả là: ${tinhTongTien4} `;
+  document.getElementById("kq4").innerText = ketQua4;
+};
+function tinhPhiXuLyHoaDon(khachHang) {
+  switch (khachHang) {
+    case nhaDan: {
+      return 4.5;
+    }
+    case doanhNghiep: {
+      return 15;
+    }
+  }
+}
+function tinhThueKenhCaoCap(khachHang) {
+  switch (khachHang) {
+    case nhaDan: {
+      return 7.5;
+    }
+    case doanhNghiep: {
+      return 50;
+    }
+  }
+}
